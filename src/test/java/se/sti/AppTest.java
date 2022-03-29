@@ -1,4 +1,10 @@
 package se.sti;
-public class AppTest 
+
+import org.junit.jupiter.api.Test;
+
+public class AppTest
 {
+    //Test
+
+
 }
