@@ -4,7 +4,7 @@ package se.sti;
  * Hello world!
  *
  */
-public class App 
+public class ShoppingBasket
 {
     public static void main( String[] args )
     {
