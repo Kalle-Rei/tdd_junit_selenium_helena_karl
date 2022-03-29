@@ -1,4 +1,4 @@
-package org.example;
+package se.sti;
 
 import static org.junit.Assert.assertTrue;
 

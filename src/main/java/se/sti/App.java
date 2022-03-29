@@ -1,4 +1,4 @@
-package org.example;
+package se.sti;
 
 /**
  * Hello world!
