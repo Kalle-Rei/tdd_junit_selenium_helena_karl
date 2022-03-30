@@ -12,9 +12,9 @@ public class ShoppingBasketTest {
         Clothes clothing1 = new Shirt(200, "S", "red");
         Shirt clothing2 = new Shirt(300, "S", "red");
         Trousers clothing3 = new Trousers(500, "34", true);
-        shoppingBasket.add(clothing1);
-        shoppingBasket.add(clothing2);
-        shoppingBasket.add(clothing3);
+        ShoppingBasket.addingItem(clothing1);
+        ShoppingBasket.addingItem(clothing2);
+        ShoppingBasket.addingItem(clothing3);
         Assertions.assertTrue(true);
     }
 
