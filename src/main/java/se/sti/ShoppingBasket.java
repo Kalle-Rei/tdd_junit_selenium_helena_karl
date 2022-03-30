@@ -26,4 +26,14 @@ public class ShoppingBasket {
         return shoppingBasket.size();
     }
 
+    public static double totalCostOfItems(ArrayList<Clothes> shoppingBasket){
+        int sum = 0;
+
+        for(Clothes c : shoppingBasket){
+            sum += c.getPrice();
+        }
+
+        return sum;
+    }
+
 }
