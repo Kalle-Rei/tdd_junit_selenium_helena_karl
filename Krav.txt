@@ -1,5 +1,5 @@
-1. skriv en abstract class "clothes" med variabeln price KLART
-2. skapa två till tre klasser som ärver av "clothes"
+1. FIXAT    ---     skriv en abstract class "clothes" med variabeln price
+2. FIXAT    ---     skapa två till tre klasser som ärver av "clothes"
 3. skapa funktionen lägga varor i kundkorgen
 4. skapa funktion för att räkna antalet varor i korgen
 5. skapa funktion för att räkna ut summan för varor i kundkorgen
