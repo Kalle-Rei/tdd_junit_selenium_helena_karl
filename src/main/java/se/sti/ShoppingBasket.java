@@ -36,4 +36,12 @@ public class ShoppingBasket {
         return sum;
     }
 
+    public static double costOfItem(ArrayList<Clothes> shoppingBasket){
+        double cost = 0;
+        if(!shoppingBasket.isEmpty()){
+            cost = shoppingBasket.get(shoppingBasket.size()-1).getPrice();
+        }
+        return cost;
+    }
+
 }

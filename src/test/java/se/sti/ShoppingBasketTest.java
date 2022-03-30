@@ -57,6 +57,14 @@ public class ShoppingBasketTest {
         Assertions.assertEquals(expectedCost, ShoppingBasket.totalCostOfItems(shoppingBasket), 0);
     }
 
+    @Test
+    @DisplayName("Cost of top item in basket")
+    public void costOfItemInBasket(){
+        double expectedCostOfItem = 500;
+        System.out.println("expectedCostOfItem= " + expectedCostOfItem + " costOfItem=" + ShoppingBasket.costOfItem(shoppingBasket));
+        Assertions.assertEquals(expectedCostOfItem, ShoppingBasket.costOfItem(shoppingBasket), 0);
+    }
+
 
 
 @Test
