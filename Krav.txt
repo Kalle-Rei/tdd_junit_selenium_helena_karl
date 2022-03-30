@@ -1,10 +1,6 @@
-1. FIXAT    ---     skriv en abstract class "clothes" med variabeln price
-2. FIXAT    ---     skapa två till tre klasser som ärver av "clothes"
-3. FIXAT    ---     skriv test för konstruktor (Clothes, Shirt, Trousers)
-4. FIXAT    ---     lägg in ovanstående test i GitHub Actions
-5. FIXAT    ---     skapa funktion för att räkna antalet varor i korgen
-6. skapa funktionen lägga varor i kundkorgen
-7. skapa funktion för att räkna ut summan för varor i kundkorgen
+TO DO:
+1. Webbtest
+2. Refactoring och code review
 
 ------
 Kravställning till Helena:
