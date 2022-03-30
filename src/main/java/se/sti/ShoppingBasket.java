@@ -18,4 +18,12 @@ public class ShoppingBasket {
         shoppingBasket.remove(shoppingBasket.size()-1);
     }
 
+    public static void removeAllItems(){
+        shoppingBasket.clear();
+    }
+
+    public static int numberOfItems(){
+        return shoppingBasket.size();
+    }
+
 }

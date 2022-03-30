@@ -2,6 +2,7 @@ package se.sti;
 
 import org.junit.jupiter.api.*;
 
+import static se.sti.ShoppingBasket.numberOfItems;
 import static se.sti.ShoppingBasket.shoppingBasket;
 
 public class ShoppingBasketTest {
@@ -26,6 +27,13 @@ public class ShoppingBasketTest {
         Assertions.assertNotEquals(shoppingBasket.size(), itemsInbasket);
     }
 
+    @Test
+    @DisplayName("Remove all items from Basket")
+    public void removeAllItemsFromBasket(){
+        ShoppingBasket.removeAllItems();
+        Assertions.assertEquals(0, shoppingBasket.size());
+    }
+
     @DisplayName("Cleared shopping basket")
     @AfterEach
     public void emptyBasket(){
@@ -38,8 +46,9 @@ public class ShoppingBasketTest {
         int expectedNumber = 3;
         System.out.println("Expected number of items: " + expectedNumber);
         System.out.println(shoppingBasket);
-        Assertions.assertEquals(expectedNumber, shoppingBasket.size());
+        Assertions.assertEquals(expectedNumber, numberOfItems());
     }
+
 
 
 
