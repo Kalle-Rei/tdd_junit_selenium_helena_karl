@@ -44,4 +44,15 @@ public class ShoppingBasket {
         return cost;
     }
 
+    public static double averageCostOfItem(ArrayList<Clothes> shoppingBasket){
+        double averageCost = 0;
+        for(Clothes c : shoppingBasket){
+            averageCost += c.getPrice();
+        }
+        if(!shoppingBasket.isEmpty()){
+            averageCost /= numberOfItems();
+        }
+        return averageCost;
+    }
+
 }
