@@ -24,6 +24,15 @@ public class ShoppingBasketTest {
         shoppingBasket.clear();
     }
 
+    @Test
+    @DisplayName("Check number of items in shoppingBasket")
+    public void numberOfItemsInBasket(){
+        int expectedNumber = 3;
+        System.out.println("Expected number of items: " + expectedNumber);
+        System.out.println(shoppingBasket);
+        Assertions.assertEquals(expectedNumber, shoppingBasket.size());
+    }
+
 
 
 @Test

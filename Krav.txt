@@ -3,5 +3,5 @@
 3. FIXAT    ---     skriv test för konstruktor (Clothes, Shirt, Trousers)
 4. FIXAT    ---     lägg in ovanstående test i GitHub Actions
 5. skapa funktionen lägga varor i kundkorgen
-6. skapa funktion för att räkna antalet varor i korgen
+6. FIXAT    ---     skapa funktion för att räkna antalet varor i korgen
 7. skapa funktion för att räkna ut summan för varor i kundkorgen
