@@ -14,4 +14,8 @@ public class ShoppingBasket {
         shoppingBasket.add(item);
     }
 
+    public static void removeItem(){
+        shoppingBasket.remove(shoppingBasket.size()-1);
+    }
+
 }

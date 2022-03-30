@@ -8,7 +8,7 @@
 
 ------
 Kravställning till Helena:
-1. Skapa en funktion som lägger till ett objekt av typen Clothes i varukorgen
+1. FIXAT    ---     Skapa en funktion som lägger till ett objekt av typen Clothes i varukorgen
 2. Skapa en funktion som tar bort ett enskilt, specifikt objekt ur varukorgen
 3. Skapa en funktion som tömmer hela varukorgen
 4. Skapa en funktion som returnerar antalet varor i varukorgen

@@ -17,6 +17,14 @@ public class ShoppingBasketTest {
         ShoppingBasket.addingItem(clothing3);
         Assertions.assertTrue(true);
     }
+    @Test
+    @DisplayName("Remove Item From Basket")
+    public void removeItemFromBasket(){
+        int itemsInbasket = shoppingBasket.size();
+        ShoppingBasket.removeItem();
+        System.out.println("Updated basket " + shoppingBasket.size() + " Items in Basket "+ itemsInbasket);
+        Assertions.assertNotEquals(shoppingBasket.size(), itemsInbasket);
+    }
 
     @DisplayName("Cleared shopping basket")
     @AfterEach
