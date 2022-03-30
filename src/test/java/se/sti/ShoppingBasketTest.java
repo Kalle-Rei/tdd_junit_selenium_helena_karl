@@ -61,8 +61,16 @@ public class ShoppingBasketTest {
     @DisplayName("Cost of top item in basket")
     public void costOfItemInBasket(){
         double expectedCostOfItem = 500;
-        System.out.println("expectedCostOfItem= " + expectedCostOfItem + " costOfItem=" + ShoppingBasket.costOfItem(shoppingBasket));
+        System.out.println("expectedCostOfItem=" + expectedCostOfItem + " costOfItem=" + ShoppingBasket.costOfItem(shoppingBasket));
         Assertions.assertEquals(expectedCostOfItem, ShoppingBasket.costOfItem(shoppingBasket), 0);
+    }
+
+    @Test
+    public void averageCostOfItemInBasket(){
+        double expectedAverageCost = 333.33; // (200+300+500)/3
+        System.out.println("expectedAverageCost=" + expectedAverageCost + " averageCostOfItem="
+                + ShoppingBasket.averageCostOfItem(shoppingBasket));
+        Assertions.assertEquals(expectedAverageCost, ShoppingBasket.averageCostOfItem(shoppingBasket), 0.5);
     }
 
 
