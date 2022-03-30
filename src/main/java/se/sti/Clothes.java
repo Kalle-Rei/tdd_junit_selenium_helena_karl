@@ -15,4 +15,11 @@ public abstract class Clothes {
     public void setPrice(double price) {
         this.price = price;
     }
+
+    @Override
+    public String toString() {
+        return "Clothes{" +
+                "price=" + price +
+                '}';
+    }
 }
