@@ -58,6 +58,16 @@ public class ShoppingBasketTest {
     }
 
     @Test
+    public void totalCostOfItemsRoundedInBasket(){
+        Clothes clothing = new Trousers(750.50, "30", true);
+        shoppingBasket.add(clothing);
+        double expectedCost = 1751;
+        System.out.println("expectedCost=" + expectedCost
+                + " totalCostOfItemsRounded=" + ShoppingBasket.totalCostOfItemsRounded(shoppingBasket));
+        Assertions.assertEquals(expectedCost, ShoppingBasket.totalCostOfItemsRounded(shoppingBasket), 0);
+    }
+
+    @Test
     @DisplayName("Cost of top item in basket")
     public void costOfItemInBasket(){
         double expectedCostOfItem = 500;
