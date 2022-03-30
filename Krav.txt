@@ -12,3 +12,9 @@ Kravställning till Helena:
 2. Skapa en funktion som tar bort ett enskilt, specifikt objekt ur varukorgen
 3. Skapa en funktion som tömmer hela varukorgen
 4. Skapa en funktion som returnerar antalet varor i varukorgen
+
+Kravställning till Karl:
+1. Skapa en funktion som räknar ut summan av varorna i varukorgen
+2. Skapa en funktion som returnerar priset på en specifik vara
+3. Skapa en funktion som returnerar medelvärdet på kostnaden
+4. Lägg till i funktionen summan, avrunda till närmsta heltal
