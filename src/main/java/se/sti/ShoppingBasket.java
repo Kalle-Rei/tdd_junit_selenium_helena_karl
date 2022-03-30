@@ -27,13 +27,17 @@ public class ShoppingBasket {
     }
 
     public static double totalCostOfItems(ArrayList<Clothes> shoppingBasket){
-        int sum = 0;
+        double sum = 0;
 
         for(Clothes c : shoppingBasket){
             sum += c.getPrice();
         }
 
         return sum;
+    }
+
+    public static double totalCostOfItemsRounded(ArrayList<Clothes> shoppingBasket){
+        return Math.round(totalCostOfItems(shoppingBasket));
     }
 
     public static double costOfItem(ArrayList<Clothes> shoppingBasket){

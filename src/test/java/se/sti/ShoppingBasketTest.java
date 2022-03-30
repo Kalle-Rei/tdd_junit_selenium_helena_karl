@@ -59,7 +59,7 @@ public class ShoppingBasketTest {
 
     @Test
     public void totalCostOfItemsRoundedInBasket(){
-        Clothes clothing = new Trousers(750.50, "30", true);
+        Clothes clothing = new Trousers(750.5, "30", true);
         shoppingBasket.add(clothing);
         double expectedCost = 1751;
         System.out.println("expectedCost=" + expectedCost
