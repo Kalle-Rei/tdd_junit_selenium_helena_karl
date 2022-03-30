@@ -2,6 +2,13 @@
 2. FIXAT    ---     skapa två till tre klasser som ärver av "clothes"
 3. FIXAT    ---     skriv test för konstruktor (Clothes, Shirt, Trousers)
 4. FIXAT    ---     lägg in ovanstående test i GitHub Actions
-5. skapa funktionen lägga varor i kundkorgen
-6. FIXAT    ---     skapa funktion för att räkna antalet varor i korgen
+5. FIXAT    ---     skapa funktion för att räkna antalet varor i korgen
+6. skapa funktionen lägga varor i kundkorgen
 7. skapa funktion för att räkna ut summan för varor i kundkorgen
+
+------
+Kravställning till Helena:
+1. Skapa en funktion som lägger till ett objekt av typen Clothes i varukorgen
+2. Skapa en funktion som tar bort ett enskilt, specifikt objekt ur varukorgen
+3. Skapa en funktion som tömmer hela varukorgen
+4. Skapa en funktion som returnerar antalet varor i varukorgen
