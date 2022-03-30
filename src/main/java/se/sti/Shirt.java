@@ -31,7 +31,9 @@ public class Shirt extends Clothes{
     public String toString() {
         return "Shirt{" +
                 "price=" + price +
-                ", size='" + size + '\'' +
+                ", size='" + size +
+                ", colour=" + colour +
+                '\'' +
                 '}';
     }
 }

@@ -1,9 +1,30 @@
 package se.sti;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
+
+import static se.sti.ShoppingBasket.shoppingBasket;
 
 public class ShoppingBasketTest {
+
+    @DisplayName("Added dummy values to shoppingBasket")
+    @BeforeEach
+    public void addItemsToBasket(){
+        Clothes clothing1 = new Shirt(200, "S", "red");
+        Shirt clothing2 = new Shirt(300, "S", "red");
+        Trousers clothing3 = new Trousers(500, "34", true);
+        shoppingBasket.add(clothing1);
+        shoppingBasket.add(clothing2);
+        shoppingBasket.add(clothing3);
+        Assertions.assertTrue(true);
+    }
+
+    @DisplayName("Cleared shopping basket")
+    @AfterEach
+    public void emptyBasket(){
+        shoppingBasket.clear();
+    }
+
+
 
 @Test
     public void doesConstructorWork() {
