@@ -18,13 +18,14 @@ public class ShoppingBasketTest {
         ShoppingBasket.addingItem(clothing3);
         System.out.println("Dummy values loaded correctly");
     }
+
     @Test
     @DisplayName("Remove Item From Basket")
     public void removeItemFromBasket(){
-        int itemsInbasket = shoppingBasket.size();
+        int itemsInBasket = shoppingBasket.size();
         ShoppingBasket.removeItem();
-        System.out.println("Updated basket " + shoppingBasket.size() + " Items in Basket "+ itemsInbasket);
-        Assertions.assertNotEquals(shoppingBasket.size(), itemsInbasket);
+        System.out.println("Updated basket " + shoppingBasket.size() + " Items in Basket "+ itemsInBasket);
+        Assertions.assertNotEquals(shoppingBasket.size(), itemsInBasket);
     }
 
     @Test
@@ -83,23 +84,17 @@ public class ShoppingBasketTest {
         Assertions.assertEquals(expectedAverageCost, ShoppingBasket.averageCostOfItem(shoppingBasket), 0.5);
     }
 
-
-
-@Test
+    @Test
     public void doesConstructorWork() {
-    Clothes clothes = new Shirt(150,"M","Red");
-    Assertions.assertEquals(150, clothes.getPrice());
+        Clothes clothes = new Shirt(150,"M","Red");
+        Assertions.assertEquals(150, clothes.getPrice());
+    }
 
-}
-
-@Test
+    @Test
     public void doesConstructorWorkHere() {
-    Clothes clothes = new Trousers(125, "38", true);
-    Assertions.assertEquals(125, clothes.getPrice());
-
-
-
-}
+        Clothes clothes = new Trousers(125, "38", true);
+        Assertions.assertEquals(125, clothes.getPrice());
+    }
 
 
 
