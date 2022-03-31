@@ -18,13 +18,13 @@ Kravställning till Karl:
 
 Webbtest
 ATT GÖRA:
-1. navigering till adress
-2. avläsning av textvärde
+1. FIXAD    navigering till adress
+2. FIXAD?   avläsning av textvärde
 3. mata in text i textfält
 4. tryck på knapp i webb-element
 
 KRAV (1 test var):
-1. Testa att titeln på sidan uppdaterats efter att användaren öppnat en ny sida
+1. Testa att titeln på sidan uppdaterats efter att användaren öppnat en ny sida (Karl)
 2. Testa att det går att söka:
 2a. Genom att mata in ett sökord och trycka på Enter
 2b. Genom att mata in ett sökord och trycka på sökknappen

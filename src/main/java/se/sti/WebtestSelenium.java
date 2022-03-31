@@ -11,6 +11,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+import java.time.Duration;
+
 public class WebtestSelenium {
 
     public static void main(String[] args) throws InterruptedException {
@@ -23,8 +25,20 @@ public class WebtestSelenium {
         driver = new FirefoxDriver();
 //        driver = new ChromeDriver();
 
+        driver.get("https://en.wikipedia.org/wiki/March_31");
+
+        System.out.println("Initial title: " + driver.getTitle());
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
+        Thread.sleep(5000);
+
+        WebElement wikiMainPageLogo = driver.findElement(By.id("p-logo"));
+        wikiMainPageLogo.click();
+        System.out.println("Current title: " + driver.getTitle());
+
+
+
+
 
     }
-
-
 }
