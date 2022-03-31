@@ -13,6 +13,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 import java.time.Duration;
+import java.util.List;
 
 public class WebtestSelenium {
 
@@ -23,8 +24,8 @@ public class WebtestSelenium {
         WebDriverManager.safaridriver().setup();
 
         WebDriver driver;
-        //driver = new FirefoxDriver();
-         driver = new ChromeDriver();
+        driver = new FirefoxDriver();
+//         driver = new ChromeDriver();
 
         driver.get("https://en.wikipedia.org/wiki/March_31");
 
@@ -64,6 +65,11 @@ public class WebtestSelenium {
         searchBox.sendKeys("Cat");
         Thread.sleep(500);
         searchButton.click();
+        Thread.sleep(1000);
+
+        // Get all text in the table of contents and print it to console
+        String tableOfContents = driver.findElement(By.id("toc")).getText();
+        System.out.println(tableOfContents);
 
 
         Thread.sleep(5000);
