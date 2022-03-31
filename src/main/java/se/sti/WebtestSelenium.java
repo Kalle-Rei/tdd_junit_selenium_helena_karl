@@ -23,8 +23,8 @@ public class WebtestSelenium {
         WebDriverManager.safaridriver().setup();
 
         WebDriver driver;
-        //driver = new FirefoxDriver();
-         driver = new ChromeDriver();
+        driver = new FirefoxDriver();
+//         driver = new ChromeDriver();
 
         driver.get("https://en.wikipedia.org/wiki/March_31");
 
@@ -39,8 +39,8 @@ public class WebtestSelenium {
 
 
 
-    WebElement searchBox = driver.findElement(By.id("searchInput"));
-        Thread.sleep(5000);
+        WebElement searchBox = driver.findElement(By.id("searchInput"));
+        Thread.sleep(3000);
 
         searchBox.sendKeys("Cat");
         Thread.sleep(500);
@@ -48,6 +48,15 @@ public class WebtestSelenium {
         Thread.sleep(500);
         searchBox.sendKeys(Keys.ENTER);
 
+        // Search by pressing the search button instead of passing Keys.ENTER
+        Thread.sleep(3000);
+        wikiMainPageLogo = driver.findElement(By.id("p-logo"));
+        wikiMainPageLogo.click();
+        searchBox = driver.findElement(By.id("searchInput"));
+        WebElement searchButton = driver.findElement(By.id("searchButton"));
+        searchBox.sendKeys("Cat");
+        Thread.sleep(500);
+        searchButton.click();
 
     }
 }
