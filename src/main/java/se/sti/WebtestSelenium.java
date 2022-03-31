@@ -1,6 +1,7 @@
 package se.sti;
 import org.openqa.selenium.By;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -22,8 +23,8 @@ public class WebtestSelenium {
         WebDriverManager.safaridriver().setup();
 
         WebDriver driver;
-        driver = new FirefoxDriver();
-//        driver = new ChromeDriver();
+        //driver = new FirefoxDriver();
+         driver = new ChromeDriver();
 
         driver.get("https://en.wikipedia.org/wiki/March_31");
 
@@ -38,6 +39,14 @@ public class WebtestSelenium {
 
 
 
+    WebElement searchBox = driver.findElement(By.id("searchInput"));
+        Thread.sleep(5000);
+
+        searchBox.sendKeys("Cat");
+        Thread.sleep(500);
+        searchBox.sendKeys(Keys.ARROW_DOWN);
+        Thread.sleep(500);
+        searchBox.sendKeys(Keys.ENTER);
 
 
     }
