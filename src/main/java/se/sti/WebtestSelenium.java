@@ -23,23 +23,29 @@ public class WebtestSelenium {
         WebDriverManager.safaridriver().setup();
 
         WebDriver driver;
-        driver = new FirefoxDriver();
-//         driver = new ChromeDriver();
+        //driver = new FirefoxDriver();
+         driver = new ChromeDriver();
 
         driver.get("https://en.wikipedia.org/wiki/March_31");
 
+        //Initializing WebElement for code readability
+        WebElement searchButton = driver.findElement(By.id("searchButton"));
+        WebElement wikiMainPageLogo = driver.findElement(By.id("p-logo"));
+        WebElement searchBox = driver.findElement(By.id("searchInput"));
+
+        //Checking title change
         System.out.println("Initial title: " + driver.getTitle());
 
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
         Thread.sleep(5000);
 
-        WebElement wikiMainPageLogo = driver.findElement(By.id("p-logo"));
+        wikiMainPageLogo = driver.findElement(By.id("p-logo"));
         wikiMainPageLogo.click();
         System.out.println("Current title: " + driver.getTitle());
 
 
-
-        WebElement searchBox = driver.findElement(By.id("searchInput"));
+        //Testing keyboard input in searchBox
+        searchBox = driver.findElement(By.id("searchInput"));
         Thread.sleep(3000);
 
         searchBox.sendKeys("Cat");
@@ -52,11 +58,16 @@ public class WebtestSelenium {
         Thread.sleep(3000);
         wikiMainPageLogo = driver.findElement(By.id("p-logo"));
         wikiMainPageLogo.click();
+
         searchBox = driver.findElement(By.id("searchInput"));
-        WebElement searchButton = driver.findElement(By.id("searchButton"));
+        searchButton = driver.findElement(By.id("searchButton"));
         searchBox.sendKeys("Cat");
         Thread.sleep(500);
         searchButton.click();
+
+
+        Thread.sleep(5000);
+        driver.quit();
 
     }
 }
