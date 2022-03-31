@@ -1,7 +1,3 @@
-TO DO:
-1. Webbtest
-2. Refactoring och code review
-
 ------
 Kravställning till Helena:
 1. Skapa en funktion som lägger till ett objekt av typen Clothes i varukorgen

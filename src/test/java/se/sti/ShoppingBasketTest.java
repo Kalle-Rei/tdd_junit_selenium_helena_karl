@@ -16,7 +16,7 @@ public class ShoppingBasketTest {
         ShoppingBasket.addingItem(clothing1);
         ShoppingBasket.addingItem(clothing2);
         ShoppingBasket.addingItem(clothing3);
-        Assertions.assertTrue(true);
+        System.out.println("Dummy values loaded correctly");
     }
     @Test
     @DisplayName("Remove Item From Basket")
